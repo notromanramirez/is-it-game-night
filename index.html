@@ -4,7 +4,7 @@
 <html lang = "en">
 <body style = "text-align:center;"> 
       
-    <button id = "BUTTON" onclick = "gfg_Run()" style = 
+    <button id = "BUTTON" onclick = "computeGameNight()" style = 
         "font-size: 35px; font-weight: bold;"> 
         Is it game night?
     </button>
@@ -17,7 +17,7 @@
         var display = document.getElementById("DISPLAY");
         var date = new Date();
           
-        function gfg_Run() {
+        function computeGameNight() {
             var day = date.getDay();
             var ans = (day === 6);
               
