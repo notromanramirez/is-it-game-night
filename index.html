@@ -7,8 +7,7 @@
     <button id = "BUTTON" onclick = "computeGameNight()" style = 
         "font-size: 35px; font-weight: bold;"> 
         Is it game night?
-    </button>
-      
+    </button> 
     <p id = "DISPLAY" style = "color:black;
         font-size: 35px; font-weight: bold;">
     </p>
@@ -19,7 +18,7 @@
           
         function computeGameNight() {
             var day = date.getDay();
-            var ans = (day === 6);
+            var ans;
               
             if ((day === 1) || (day === 4)) {
                 ans = "It is game night.";
