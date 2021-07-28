@@ -3,7 +3,7 @@ aiohttp==3.7.4.post0
 alabaster==0.7.12
 anaconda-client==1.7.2
 anaconda-navigator==1.9.12
-anaconda-project==0.8.3
+anaconda-project @ git+https://github.com/Anaconda-Platform/anaconda-project@212256e4654a43cbcf710eb0228e9da473ddf79c
 applaunchservices==0.2.1
 appnope @ file:///opt/concourse/worker/volumes/live/0291c9e1-4b15-459f-623e-2770f55be269/volume/appnope_1594338395037/work
 appscript @ file:///opt/concourse/worker/volumes/live/50ca4c96-3090-40bb-6981-3a6114ed0af4/volume/appscript_1594840187551/work
@@ -41,6 +41,7 @@ clyent==1.2.2
 colorama==0.4.3
 conda==4.8.3
 conda-build==3.18.11
+conda-pack==0.6.0
 conda-package-handling==1.7.0+0.g7c4a471.dirty
 conda-verify==3.4.2
 contextlib2==0.6.0.post1
@@ -76,6 +77,7 @@ greenlet==0.4.16
 grpcio==1.32.0
 h5py==2.10.0
 HeapDict==1.0.1
+heroku==0.1.4
 html5lib @ file:///tmp/build/80754af9/html5lib_1593446221756/work
 idna @ file:///tmp/build/80754af9/idna_1593446292537/work
 imageio @ file:///tmp/build/80754af9/imageio_1594161405741/work
@@ -179,7 +181,7 @@ pyparsing==2.4.7
 pyrsistent==0.16.0
 PySocks @ file:///opt/concourse/worker/volumes/live/85a5b906-0e08-41d9-6f59-084cee4e9492/volume/pysocks_1594394636991/work
 pytest==5.4.3
-python-dateutil==2.8.1
+python-dateutil==2.8.2
 python-jsonrpc-server @ file:///tmp/build/80754af9/python-jsonrpc-server_1594397536060/work
 python-language-server @ file:///opt/concourse/worker/volumes/live/5f0313b4-ff69-4d9d-5c31-e01b223dabd6/volume/python-language-server_1594161914367/work
 pytz==2020.1
