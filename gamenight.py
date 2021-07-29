@@ -48,7 +48,7 @@ def send_game_night_tweet():
 while True:
 
     # the time to tweet an update is noon EST
-	TIME_TO_TWEET = "18:24" # "16:00"
+	TIME_TO_TWEET = "13:00"
 
 	# store the current time
 	current_time = strftime("%H:%M", gmtime())
