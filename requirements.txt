@@ -1,4 +1,3 @@
-git+https://github.com/notromanramirez/is-it-game-night/gamenight.py@rewrite
 tweepy
 datetime
 time
