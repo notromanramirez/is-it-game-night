@@ -5,14 +5,17 @@
 import tweepy
 from datetime import date
 from time import gmtime, strftime, sleep
+from dotenv import load_dotenv
+import os
 
 ### CONSTANT TWITTER VARIABLES ###
 
-CONSUMER_KEY = "WmuoMM30xeN7VIBoQw5ZRXlm5"
-CONSUMER_SECRET = "2edBQxvFQgiBh2DlVdReIKCI8JaJFpfGwSOPxhMivYm9OsOLbR"
-
-ACCESS_KEY = "1408441889058078724-KTQUX8144SzBUMoSwhT74EwmMwhtiA"
-ACCESS_SECRET = "Ahnaikkhd7xqLNZPKlH4elVNAplpjCSn0Pm5a062Wo3a2"
+# create environment variables
+load_dotenv()
+CONSUMER_KEY = os.environ["CONSUMER_KEY"]
+CONSUMER_SECRET = os.environ["CONSUMER_SECRET"]
+ACCESS_KEY = os.environ["ACCESS_KEY"]
+ACCESS_SECRET = os.environ["ACCESS_SECRET"]
 
 ### SETTING UP TWITTER API ###
 
@@ -47,8 +50,7 @@ def send_game_night_tweet():
 # run forever
 while True:
 
-    # the time to tweet an update is noon EST
-	TIME_TO_TWEET = "13:00"
+	TIME_TO_TWEET = "14:00"
 
 	# store the current time
 	current_time = strftime("%H:%M", gmtime())
