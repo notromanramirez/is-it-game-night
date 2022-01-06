@@ -41,7 +41,7 @@ def send_game_night_tweet():
         # post a picture of attention.jpg
 		attention_jpg = "images/attention.jpg"
 		media = api.media_upload(filename=attention_jpg)
-		api.update_status(media_ids=[media.media_id])
+		api.update_status(status="", media_ids=[media.media_id])
 
 	else:
 	    # create a post saying that it is not game night.
