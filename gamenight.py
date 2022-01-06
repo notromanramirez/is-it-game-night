@@ -50,7 +50,7 @@ def send_game_night_tweet():
 # run forever
 while True:
 
-	TIME_TO_TWEET = "15:00"
+	TIME_TO_TWEET = "15:05"
 
 	# store the current time
 	current_time = strftime("%H:%M", gmtime())
