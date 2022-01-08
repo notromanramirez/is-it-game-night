@@ -29,7 +29,7 @@ api = tweepy.API(auth)
 def send_game_night_tweet():
 
     # output message
-	print('Sending game night tweet.\n')
+	print('Sending game night tweet.')
 
     # determine the day of the week
 	date_of_today = date.today()
@@ -55,14 +55,14 @@ while True:
 	# store the current time
 	current_time = strftime("%H:%M", gmtime())
 
-	print("It is now %s." % current_time)
+	print(f"It is now {current_time}.", end=' ')
 
     # send a tweet if it's time to send one
 	if (current_time == TIME_TO_TWEET):
 		send_game_night_tweet()
 	# otherwise wait
 	else:
-		print("It isn't time to send a tweet yet. A tweet will be sent at %s.\n" % TIME_TO_TWEET)
+		print(f"It isn't time to send a tweet yet. A tweet will be sent at {TIME_TO_TWEET}.")
 
 	# wait 59 seconds before checking
 	sleep(59)
